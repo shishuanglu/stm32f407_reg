@@ -352,6 +352,8 @@
                     <state>$PROJ_DIR$</state>
                     <state>$PROJ_DIR$\inc</state>
                     <state>$PROJ_DIR$\Bsp</state>
+                    <state>$PROJ_DIR$\FATFS</state>
+                    <state>$PROJ_DIR$\MALLOC</state>
                 </option>
                 <option>
                     <name>CCStdIncCheck</name>
@@ -2091,6 +2093,15 @@
         </file>
         <file>
             <name>$PROJ_DIR$\Bsp\uartBsp.c</name>
+        </file>
+    </group>
+    <group>
+        <name>FATFS</name>
+        <file>
+            <name>$PROJ_DIR$\FATFS\diskio.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\FATFS\ff.c</name>
         </file>
     </group>
     <group>

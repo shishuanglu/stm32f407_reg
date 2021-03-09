@@ -3,6 +3,7 @@
         "stm32f4xx_tim.h": "c",
         "stm32f4xx_rcc.h": "c",
         "canbsp.h": "c",
-        "stm32f4xx_sdio.h": "c"
+        "stm32f4xx_sdio.h": "c",
+        "sdiobsp.h": "c"
     }
 }

@@ -33,7 +33,7 @@ void PWM_Config (void)
   TIM3_TimeBaseInitStructure.TIM_CounterMode = TIM_CounterMode_Up;
   /*1MS 进入一次*/
   TIM3_TimeBaseInitStructure.TIM_Period = 999;       //0-0XFFFF
-  TIM3_TimeBaseInitStructure.TIM_Prescaler = 7;       //0-0XFFFF
+  TIM3_TimeBaseInitStructure.TIM_Prescaler = 83;       //0-0XFFFF
   //TIM1_TimeBaseInitStructure.TIM_RepetitionCounter
   TIM_TimeBaseInit(TIM3, &TIM3_TimeBaseInitStructure);
 

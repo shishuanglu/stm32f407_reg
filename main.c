@@ -11,12 +11,21 @@
 #include "canBsp.h"
 #include "sdioBsp.h"
 #include <stdio.h>
+#include "ff.h"
 
 
 unsigned char b=0;
 u8 canbuf[8] = {1,1,1,1,1,1,1,1};
 
 u8 res = 0;
+
+u8 writeBuf[512] = {1,2,3,4,5,6,7,8};
+u8 readBuf[512];
+
+FATFS fs;
+FIL fil;
+UINT fnum; 
+
 
 int main()
 {
@@ -39,7 +48,7 @@ int main()
   RCC_MCO2Config(RCC_MCO2Source_SYSCLK, RCC_MCO2Div_4);*/
 
   /**/
-  RCC_Config();
+  //RCC_Config();
   NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);
   
   GPIO_Config ();
@@ -65,6 +74,15 @@ int main()
   }
 
   show_sdcard_info();	//打印SD卡相关信息
+
+  //SD_WriteDisk(writeBuf,0,1);
+  //SD_ReadDisk(readBuf,0,1);
+  
+  res = f_mount(&fs,"0:",1); 	
+  //res=f_mkfs("0:",0,512);
+  res = f_open(&fil,"abc.txt",FA_OPEN_ALWAYS | FA_WRITE);
+  res=f_write(&fil,writeBuf,sizeof(writeBuf),&fnum);
+  f_close(&fil);
 
   while(1)
   {

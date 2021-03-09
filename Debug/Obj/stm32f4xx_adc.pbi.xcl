@@ -13,6 +13,10 @@ E:\iar_project\stm32f407_reg\inc
 -I
 E:\iar_project\stm32f407_reg\Bsp
 -I
+E:\iar_project\stm32f407_reg\FATFS
+-I
+E:\iar_project\stm32f407_reg\MALLOC
+-I
 D:\Program Files (x86)\IAR Systems\Embedded Workbench 8.1\arm\CMSIS\Core\Include
 -I
 D:\Program Files (x86)\IAR Systems\Embedded Workbench 8.1\arm\CMSIS\DSP\Include
@@ -26,6 +30,10 @@ E:\iar_project\stm32f407_reg
 E:\iar_project\stm32f407_reg\inc
 -I
 E:\iar_project\stm32f407_reg\Bsp
+-I
+E:\iar_project\stm32f407_reg\FATFS
+-I
+E:\iar_project\stm32f407_reg\MALLOC
 -I
 D:\Program Files (x86)\IAR Systems\Embedded Workbench 8.1\arm\CMSIS\Core\Include
 -I
