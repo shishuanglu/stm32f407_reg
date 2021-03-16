@@ -9,6 +9,18 @@ E:\iar_project\stm32f407_reg\Debug\Obj\gpioBsp.pbi
 E:\iar_project\stm32f407_reg\Debug\Obj\iwdgBsp.pbi
 E:\iar_project\stm32f407_reg\Debug\Obj\main.pbi
 E:\iar_project\stm32f407_reg\Debug\Obj\misc.pbi
+E:\iar_project\stm32f407_reg\Debug\Obj\os_core.pbi
+E:\iar_project\stm32f407_reg\Debug\Obj\os_cpu_c.pbi
+E:\iar_project\stm32f407_reg\Debug\Obj\os_dbg.pbi
+E:\iar_project\stm32f407_reg\Debug\Obj\os_flag.pbi
+E:\iar_project\stm32f407_reg\Debug\Obj\os_mbox.pbi
+E:\iar_project\stm32f407_reg\Debug\Obj\os_mem.pbi
+E:\iar_project\stm32f407_reg\Debug\Obj\os_mutex.pbi
+E:\iar_project\stm32f407_reg\Debug\Obj\os_q.pbi
+E:\iar_project\stm32f407_reg\Debug\Obj\os_sem.pbi
+E:\iar_project\stm32f407_reg\Debug\Obj\os_task.pbi
+E:\iar_project\stm32f407_reg\Debug\Obj\os_time.pbi
+E:\iar_project\stm32f407_reg\Debug\Obj\os_tmr.pbi
 E:\iar_project\stm32f407_reg\Debug\Obj\pwmBsp.pbi
 E:\iar_project\stm32f407_reg\Debug\Obj\rccBsp.pbi
 E:\iar_project\stm32f407_reg\Debug\Obj\sdioBsp.pbi
@@ -37,6 +49,7 @@ E:\iar_project\stm32f407_reg\Debug\Obj\stm32f4xx_hash.pbi
 E:\iar_project\stm32f407_reg\Debug\Obj\stm32f4xx_hash_md5.pbi
 E:\iar_project\stm32f407_reg\Debug\Obj\stm32f4xx_hash_sha1.pbi
 E:\iar_project\stm32f407_reg\Debug\Obj\stm32f4xx_i2c.pbi
+E:\iar_project\stm32f407_reg\Debug\Obj\stm32f4xx_it.pbi
 E:\iar_project\stm32f407_reg\Debug\Obj\stm32f4xx_iwdg.pbi
 E:\iar_project\stm32f407_reg\Debug\Obj\stm32f4xx_lptim.pbi
 E:\iar_project\stm32f407_reg\Debug\Obj\stm32f4xx_ltdc.pbi
@@ -54,5 +67,6 @@ E:\iar_project\stm32f407_reg\Debug\Obj\stm32f4xx_tim.pbi
 E:\iar_project\stm32f407_reg\Debug\Obj\stm32f4xx_usart.pbi
 E:\iar_project\stm32f407_reg\Debug\Obj\stm32f4xx_wwdg.pbi
 E:\iar_project\stm32f407_reg\Debug\Obj\system_stm32f4xx.pbi
+E:\iar_project\stm32f407_reg\Debug\Obj\systickBsp.pbi
 E:\iar_project\stm32f407_reg\Debug\Obj\timBsp.pbi
 E:\iar_project\stm32f407_reg\Debug\Obj\uartBsp.pbi

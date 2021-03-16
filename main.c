@@ -12,6 +12,7 @@
 #include "sdioBsp.h"
 #include <stdio.h>
 #include "ff.h"
+#include "systickBsp.h"
 
 
 unsigned char b=0;
@@ -48,41 +49,68 @@ int main()
   RCC_MCO2Config(RCC_MCO2Source_SYSCLK, RCC_MCO2Div_4);*/
 
   /**/
-  //RCC_Config();
+#if RCC_CONFIG_ENABLE
+  RCC_Config();
+#endif
+
+#if SYSTICK_CONFIG_ENABLE
+  SYSTICK_Config();
+#endif
+
   NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);
   
+#if GPIO_CONFIG_ENABLE 
   GPIO_Config ();
+#endif
   
-  //UART_Config ();
+#if UART_CONFIG_ENABLE
+  UART_Config ();
+#endif
   
-  //EXTI_Config ();
+#if EXTI_CONFIG_ENABLE
+  EXTI_Config ();
+#endif
   
-  //IWDG_Config ();
+#if IWDG_CONFIG_ENABLE
+  IWDG_Config ();
+#endif
   
-  //TIM_Config();
+#if TIM_CONFIG_ENABLE
+  TIM_Config();
+#endif
   
+#if PWM_CONFIG_ENABLE
   PWM_Config();
+#endif
   
-  //CAPTURE_Config();
-  //DMA_Mem2Mem_Config ();
+#if CAPTURE_CONFIG_ENABLE
+  CAPTURE_Config();
+#endif
 
-  //CAN_Config();
-   
+#if DMA_CONFIG_ENABLE
+  DMA_Mem2Mem_Config ();
+#endif
+
+#if CAN_CONFIG_ENABLE
+  CAN_Config();
+#endif
+/*   
   while(SD_Init())//检测不到SD卡
   {
     printf("SD card init error");
   }
 
   show_sdcard_info();	//打印SD卡相关信息
+  */
 
   //SD_WriteDisk(writeBuf,0,1);
   //SD_ReadDisk(readBuf,0,1);
   
-  res = f_mount(&fs,"0:",1); 	
+  /*res = f_mount(&fs,"0:",1); 	
   //res=f_mkfs("0:",0,512);
   res = f_open(&fil,"abc.txt",FA_OPEN_ALWAYS | FA_WRITE);
   res=f_write(&fil,writeBuf,sizeof(writeBuf),&fnum);
-  f_close(&fil);
+  f_close(&fil);*/
 
   while(1)
   {

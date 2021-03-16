@@ -2399,6 +2399,12 @@
             <name>$PROJ_DIR$\Bsp\sdioBsp.c</name>
         </file>
         <file>
+            <name>$PROJ_DIR$\Bsp\stm32f4xx_it.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Bsp\systickBsp.c</name>
+        </file>
+        <file>
             <name>$PROJ_DIR$\Bsp\timBsp.c</name>
         </file>
         <file>
@@ -2542,6 +2548,66 @@
         <file>
             <name>$PROJ_DIR$\src\stm32f4xx_wwdg.c</name>
         </file>
+    </group>
+    <group>
+        <name>UCOSII</name>
+        <group>
+            <name>PORT</name>
+            <file>
+                <name>$PROJ_DIR$\uCOS-II\Ports\os_cpu.h</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\uCOS-II\Ports\os_cpu_a.asm</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\uCOS-II\Ports\os_cpu_c.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\uCOS-II\Ports\os_dbg.c</name>
+            </file>
+        </group>
+        <group>
+            <name>SOURCE</name>
+            <file>
+                <name>$PROJ_DIR$\uCOS-II\Source\os.h</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\uCOS-II\Source\os_cfg.h</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\uCOS-II\Source\os_core.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\uCOS-II\Source\os_flag.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\uCOS-II\Source\os_mbox.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\uCOS-II\Source\os_mem.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\uCOS-II\Source\os_mutex.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\uCOS-II\Source\os_q.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\uCOS-II\Source\os_sem.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\uCOS-II\Source\os_task.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\uCOS-II\Source\os_time.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\uCOS-II\Source\os_tmr.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\uCOS-II\Source\ucos_ii.h</name>
+            </file>
+        </group>
     </group>
     <file>
         <name>$PROJ_DIR$\main.c</name>

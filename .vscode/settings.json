@@ -4,6 +4,8 @@
         "stm32f4xx_rcc.h": "c",
         "canbsp.h": "c",
         "stm32f4xx_sdio.h": "c",
-        "sdiobsp.h": "c"
+        "sdiobsp.h": "c",
+        "core_cm4.h": "c",
+        "systickbsp.h": "c"
     }
 }
