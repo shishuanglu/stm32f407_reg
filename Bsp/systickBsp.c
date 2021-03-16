@@ -13,5 +13,5 @@ void SYSTICK_Config(void)
         设置为168时，SysTick_Handler中断周期为1us
 
     */
-    SysTick_Config(168);
+    SysTick_Config(168000);
 }

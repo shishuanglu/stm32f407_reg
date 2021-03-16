@@ -13,6 +13,7 @@
 #include <stdio.h>
 #include "ff.h"
 #include "systickBsp.h"
+#include "ucos_ii.h"
 
 
 unsigned char b=0;
@@ -27,6 +28,56 @@ FATFS fs;
 FIL fil;
 UINT fnum; 
 
+
+#define OS_TASK_TMR_PRIO                         3
+ 
+/* task priority */ 
+ 
+#define STARTUP_TASK_PRIO                           6 
+ 
+/* task stack size */ 
+ 
+#define STARTUP_TASK_STK_SIZE                   80
+ 
+ 
+ 
+#define                  Task1_Stk_Size             64
+ 
+#define                  Task1_Prio                   11
+static OS_STK       Task1_stk[Task1_Stk_Size];
+static OS_STK       Task2_stk[Task1_Stk_Size];
+ 
+ 
+ 
+static void Task1(void *p_arg) 
+ 
+{ 
+ 
+         for (;;) 
+ 
+         { 
+ 
+ 
+                 OSTimeDly(500);   
+ 
+         } 
+ 
+}
+
+static void Task2(void *p_arg) 
+ 
+{ 
+ 
+         for (;;) 
+ 
+         { 
+ 
+ 
+                 OSTimeDly(1000);   
+ 
+         } 
+ 
+}
 
 int main()
 {
@@ -112,6 +163,17 @@ int main()
   res=f_write(&fil,writeBuf,sizeof(writeBuf),&fnum);
   f_close(&fil);*/
 
+
+  OSInit(); 
+
+  OSTaskCreate(Task1, (void *)0, 
+
+          &Task1_stk[Task1_Stk_Size-1], Task1_Prio);
+  OSTaskCreate(Task2, (void *)0, 
+
+          &Task2_stk[Task1_Stk_Size-1], 12);
+
+  OSStart();
   while(1)
   {
     b++;

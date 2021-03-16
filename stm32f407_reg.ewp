@@ -354,6 +354,8 @@
                     <state>$PROJ_DIR$\Bsp</state>
                     <state>$PROJ_DIR$\FATFS</state>
                     <state>$PROJ_DIR$\MALLOC</state>
+                    <state>$PROJ_DIR$\uCOS-II\Source</state>
+                    <state>$PROJ_DIR$\uCOS-II\Ports</state>
                 </option>
                 <option>
                     <name>CCStdIncCheck</name>
